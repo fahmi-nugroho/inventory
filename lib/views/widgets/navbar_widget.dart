@@ -12,20 +12,16 @@ class NavbarWidget extends StatelessWidget {
         return NavigationBar(
           destinations: [
             NavigationDestination(
-              icon: Icon(Icons.dashboard),
-              label: 'Dashboard',
+              icon: Icon(Icons.home),
+              label: 'Home',
             ),
             NavigationDestination(
               icon: Icon(Icons.inventory),
-              label: 'Inventory',
+              label: 'Barang',
             ),
             NavigationDestination(
               icon: Icon(Icons.swap_horiz),
-              label: 'Transactions',
-            ),
-            NavigationDestination(
-              icon: Icon(Icons.report),
-              label: 'Reports',
+              label: 'Aktivitas',
             ),
             NavigationDestination(
               icon: Icon(Icons.person),

@@ -9,16 +9,16 @@ class Item {
 }
 
 class DashboardPage extends StatelessWidget {
-  DashboardPage({super.key});
-
-  final items = [
-    Item(name: 'Laptop', action: 'Add', updated: '2 hours ago'),
-    Item(name: 'Proyektor', action: 'Update', updated: '5 hours ago'),
-    Item(name: 'Kabel HDMI', action: 'Low', updated: '1 day ago'),
-  ];
+  const DashboardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final items = [
+      Item(name: 'Laptop', action: 'Add', updated: '2 hours ago'),
+      Item(name: 'Proyektor', action: 'Update', updated: '5 hours ago'),
+      Item(name: 'Kabel HDMI', action: 'Low', updated: '1 day ago'),
+    ];
+    
     return SingleChildScrollView(
       padding: EdgeInsets.all(22.0),
       child: Column(

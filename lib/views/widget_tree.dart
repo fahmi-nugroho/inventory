@@ -112,6 +112,17 @@ class WidgetTree extends StatelessWidget {
         },
       ),
       bottomNavigationBar: NavbarWidget(),
+      floatingActionButton: ValueListenableBuilder(
+        valueListenable: selectedPageNotifier,
+        builder: (context, value, child) {
+          return value == 1
+              ? FloatingActionButton.extended(
+                  onPressed: () {},
+                  label: Icon(Icons.add),
+                )
+              : Container();
+        },
+      ),
     );
   }
 }
